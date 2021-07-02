@@ -59,5 +59,12 @@ Cannot compile or simply do not want to? There you go! :)
 - Linux:
 - Mac: I have neither Mac nor friends with Mac, so it's your turn to contribute to the project ;)
 
+## More games
+
+Help me popularize CLI/TUI games and join us on Telegram and Matrix (Matrix room is way more alive to be honest)
+
+### Matrix: #terminal-gaming:matrix.org
+### Telegram: https://t.me/cligaming
+
 ## License
 **All code and programs in this repository are relased under MIT License.**
