@@ -63,8 +63,10 @@ Cannot compile or simply do not want to? There you go! :)
 
 Help me popularize CLI/TUI games and join us on Telegram and Matrix (Matrix room is way more alive to be honest)
 
-### Matrix: #terminal-gaming:matrix.org
-### Telegram: https://t.me/cligaming
+### Matrix: 
+- #terminal-gaming:matrix.org
+### Telegram: 
+- https://t.me/cligaming
 
 ## License
 **All code and programs in this repository are relased under MIT License.**
