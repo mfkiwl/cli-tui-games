@@ -22,7 +22,7 @@ Cannot compile or simply do not want to? There you go! :)
 
 - Windows:
 - Linux:
-- Mac: I have neither Mac nor friends with Mac, so it's your turn to contribute to the project ;)
+- Mac: I have neither Mac nor friends with Mac, so it is your turn to contribute to the project ;)
 
 
 ## [Blackjack](https://github.com/skelly37/cli-tui-games/blackjack.cpp)
@@ -57,7 +57,7 @@ Cannot compile or simply do not want to? There you go! :)
 
 - Windows:
 - Linux:
-- Mac: I have neither Mac nor friends with Mac, so it's your turn to contribute to the project ;)
+- Mac: I have neither Mac nor friends with Mac, so it is your turn to contribute to the project ;)
 
 ## More games
 
