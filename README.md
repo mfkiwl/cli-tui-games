@@ -47,9 +47,9 @@ Blackjack is my favorite card game (and a favorite way to gamble, I guess) so I 
 - Hi Lo card counting challenge  
   - Card counting helps you with predicting the possibility of getting high or low value in the next hit ([more info](https://en.wikipedia.org/wiki/Card_counting)). Enter the correct sum and confirm with enter (**SUM, not the value of the current card**) or exit entering 0.25 (because it makes input validation easier and I an lazy).
   - Hi Lo card values (color also does not matter):
-    - +1: 2, 3, 4, 5, 6
-    - 0:  7, 8, 9
-    - -1: 10, J, Q, K, A
+    - **+1**: 2, 3, 4, 5, 6
+    - **0**:  7, 8, 9
+    - **-1**: 10, J, Q, K, A
 
 ### Premade binaries
 
