@@ -2,7 +2,7 @@
 Simply my games running in command line or terminal user interface
 
 
-## [2048](https://github.com/skelly37/cli-tui-games/2048.cpp)
+## [2048](https://github.com/skelly37/cli-tui-games/blob/main/2048.cpp)
 
 ### Features
 
@@ -25,7 +25,7 @@ Cannot compile or simply do not want to? There you go! :)
 - Mac: I have neither Mac nor friends with Mac, so it is your turn to contribute to the project ;)
 
 
-## [Blackjack](https://github.com/skelly37/cli-tui-games/blackjack.cpp)
+## [Blackjack](https://github.com/skelly37/cli-tui-games/blob/main/blackjack.cpp)
 
 ### Features
 
