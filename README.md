@@ -16,7 +16,7 @@ My version of game runs in an endless mode. Collect points as long as you can!
 
 You can **move up, down, left and right** (**WSAD**) — the whole table moves. It may sound silly but it iss very intuitive when you start playing. You can also **undo** move (but once! No cheating possible :) — do a move and you will be able to undo once again) with **E** and **quit** the game with **Q**
 
-### Premade binaries
+### Premade binaries [TODO]
 
 Cannot compile or simply do not want to? There you go! :)
 
@@ -51,7 +51,7 @@ Blackjack is my favorite card game (and a favorite way to gamble, I guess) so I 
     - **0**:  7, 8, 9
     - **-1**: 10, J, Q, K, A
 
-### Premade binaries
+### Premade binaries [TODO]
 
 Cannot compile or simply do not want to? There you go! :)
 
@@ -67,6 +67,10 @@ Help me popularize CLI/TUI games and join us on Telegram and Matrix (Matrix room
 - #terminal-gaming:matrix.org
 ### Telegram: 
 - https://t.me/cligaming
+
+## Note
+
+Games might be still buggy. Please, report the bugs :)
 
 ## License
 **All code and programs in this repository are relased under MIT License.**
