@@ -486,16 +486,17 @@ class Game2048
 			print_board();
 			print_points();
 			print_highscore();
+			print_game_controls();
 		}
 
 			/* Game UI helpers */
 			void print_board()
 			{
-				string theboard = "╔═══════════════════════╗\n";
+				string theboard = "\t\t╔═══════════════════════╗\n";
 
 				for(unsigned short row=0; row<4; row++)
 				{
-					theboard += "║";
+					theboard += "\t\t║";
 					for(unsigned short column=0; column<4; column++)
 					{
 						string current_num = to_string(board[row][column]);
@@ -525,76 +526,94 @@ class Game2048
 					}
 					theboard += "║\n";
 					if(row<3)
-						theboard += "║─────┼─────┼─────┼─────║\n";
+						theboard += "\t\t║─────┼─────┼─────┼─────║\n";
 				}
-				cout << theboard << "╚═══════════════════════╝\n";
+				cout << theboard << "\t\t╚═══════════════════════╝\n";
 			}
 
 			void print_moves()
 			{
-				cout << "Moves: " << setw(20) << moves << endl;
+				cout << "\t\tMoves: " << setw(20) << moves << endl;
 			}
 
 			void print_points()
 			{
-				cout << "Points: " << setw(19) << points << endl;
+				cout << "\t\tPoints: " << setw(19) << points << endl;
 			}
 
 			void print_highscore()
 			{
-				cout << "Highscore: " << setw(10) << highscore << endl;
+				cout << "\t\tHighscore: " << setw(10) << highscore << endl;
+			}
+
+			void print_game_controls()
+			{
+				cout << endl;
+				cout << "\t\tWSAD -- move the board" << endl;
+				cout << "\t\tE    -- undo" << endl;
+				cout << "\t\tQ    -- exit" << endl;
 			}
 	/* End of game UI */
 
 	/* MENU */
-		static void menu_default()
+		static void print_menu(unsigned short position=0)
 		{
+			Game2048::clear_screen();
+
 			print_menu_header();
-			cout << "    NEW GAME" << endl;
-			cout << "    KEY BINDINGS" << endl;
-			cout << "    EXIT" << endl;
+
+			print_position1_new_game(position);
+			print_position2_controls(position);
+			print_position3_credits(position);
+			print_position4_exit(position);
+
 			print_menu_footer();
 		}
 
-		static void menu_new_selected()
-		{
-			print_menu_header();
-			cout << ">>> NEW GAME <<<" << endl;
-			cout << "    KEY BINDINGS" << endl;
-			cout << "    EXIT" << endl;
-			print_menu_footer();
-		}
+			static void print_position1_new_game(unsigned short position)
+			{
+				if(position==1)
+					cout << "\t    >>> NEW GAME <<<" << endl;
+				else
+					cout << "\t\tNEW GAME" << endl;
+			}
 
-		static void menu_controls_selected()
-		{
-			print_menu_header();
-			cout << "    NEW GAME" << endl;
-			cout << ">>> KEY BINDINGS <<<" << endl;
-			cout << "    EXIT" << endl;
-			print_menu_footer();
-		}
+			static void print_position2_controls(unsigned short position)
+			{
+				if(position==2)
+					cout << "\t    >>> CONTROLS <<<" << endl;
+				else
+					cout << "\t\tCONTROLS" << endl;
+			}
 
-		static void menu_exit_selected()
-		{
-			print_menu_header();
-			cout << "    NEW GAME" << endl;
-			cout << "    KEY BINDINGS" << endl;
-			cout << ">>> EXIT <<<" << endl;
-			print_menu_footer();
-		}
+			static void print_position3_credits(unsigned short position)
+			{
+				if(position==3)
+					cout << "\t    >>> CREDITS/INFO <<<" << endl;
+				else
+					cout << "\t\tCREDITS/INFO" << endl;
+			}
+
+			static void print_position4_exit(unsigned short position)
+			{
+				if(position==4)
+					cout << "\t    >>> EXIT <<<" << endl;
+				else
+					cout << "\t\tEXIT" << endl;;
+			}
 
 		static void print_menu_header()
 		{
-			cout << "    |2|0|4|8|" << endl;
-			cout << "   C++ edition" << endl << endl;
+			cout << "\t\t |2|0|4|8|" << endl;
+			cout << "\t\tC++ edition" << endl << endl;
 		}
 
 		static void print_menu_footer()
 		{
 			cout << endl << endl;
-			cout << "W - up" << endl;
-			cout << "S - down" << endl;
-			cout << "E - confirm" << endl;
+			cout << "\t\tW - up" << endl;
+			cout << "\t\tS - down" << endl;
+			cout << "\t\tE - confirm" << endl;
 		}
 	/* End of MENU */
 
@@ -646,19 +665,40 @@ class Game2048
 
 		static void print_controls()
 		{
-			cout << "-------------" << endl;
-			cout << "Controls:" << endl;
-			cout << "-------------" << endl;
-			cout << "W -- up" << endl;
-			cout << "S -- down" << endl;
-			cout << "A -- left" << endl;
-			cout << "D -- right" << endl;
-			cout << "E -- (in menu) confirm choice, (in game, available once per move) undo" << endl;
-			cout << "Q -- exit" << endl << endl;
+			cout << "\t\t-------------" << endl;
+			cout << "\t\tControls:" << endl;
+			cout << "\t\t-------------" << endl;
+			cout << "\t\tW -- up" << endl;
+			cout << "\t\tS -- down" << endl;
+			cout << "\t\tA -- left" << endl;
+			cout << "\t\tD -- right" << endl;
+			cout << "\t\tE -- (in menu) confirm choice, (in game, available once per move) undo" << endl;
+			cout << "\t\tQ -- exit" << endl << endl;
 
-			cout << "Press any key to start game" << endl;
-			cout << "or Q to exit" << endl;
-			cout << "-----------------------------------------------\n";
+			cout << "\t\tPress any key to start game" << endl;
+			cout << "\t\tor Q to exit" << endl;
+			cout << "\t\t-----------------------------------------------\n";
+
+			if(get_choice()=='Q')
+				exit(0);
+		}
+
+		static void print_credits()
+		{
+			cout << "\t\t--------------------" << endl;
+			cout << "\t\tCredits and info" << endl;
+			cout << "\t\t--------------------" << endl;
+
+			cout << "\t\tDeveloper: skelly37 (https://github.com/skelly37), 2021, MIT License";
+			cout << endl << endl;
+			cout << "\t\tMore terminal/terminal-like UI games:" << endl;
+			cout << "\t\tMatrix: #terminal-gaming:matrix.org" << endl;
+			cout << "\t\tTelegram: https://t.me/cligaming" << endl;
+			cout << endl << endl;
+			cout << "\t\tJoin us and help us with making TUI games more popular!" << endl;
+			cout << "\t\tPress any key to start game" << endl;
+			cout << "\t\tor Q to exit" << endl;
+			cout << "\t\t-----------------------------------------------\n";
 
 			if(get_choice()=='Q')
 				exit(0);
@@ -668,17 +708,17 @@ class Game2048
 		{
 			clear_screen();
 			print_board();
-			cout << endl << "----------------------------" << endl;
-			cout << "GAME OVER" << endl;
+			cout << endl << "\t\t----------------------------" << endl;
+			cout << "\t\tGAME OVER" << endl;
 			if(highscore_beaten)
-				cout << "NEW HIGHSCORE!";
+				cout << "\t\tNEW HIGHSCORE!";
 			cout << endl;
 			print_points();
 			print_moves();
-			cout << "----------------------------" << endl;
-			cout << endl << "To play once again press E" << endl;
-			cout << "To exit press Q" << endl;
-			cout << "-----------------------------------------------\n";
+			cout << "\t\t----------------------------" << endl;
+			cout << endl << "\t\tTo play once again press E" << endl;
+			cout << "\t\tTo exit press Q" << endl;
+			cout << "\t\t-----------------------------------------------\n";
 		}
 
 		static unsigned short main_menu()
@@ -688,25 +728,12 @@ class Game2048
 
 			do
 			{
-				Game2048::clear_screen();
-				menu_default();
+				print_menu();
 				
 				Game2048::wait(0.1);
 
-				Game2048::clear_screen();
+				print_menu(position);
 
-				switch(position)
-				{
-					case 1:
-						menu_new_selected();
-						break;
-					case 2:
-						menu_controls_selected();
-						break;
-					case 3:
-						menu_exit_selected();
-						break;
-				}
 				input = Game2048::get_choice();
 
 				switch(input)
@@ -720,9 +747,9 @@ class Game2048
 				};
 
 				if(position==0)
-					position++;
-				else if(position==4)
-					position--;
+					position=4;
+				else if(position==5)
+					position=1;
 
 			}while(input!='E');
 
@@ -791,6 +818,20 @@ class Game2048
 	/* End of static helper methods */
 };
 
+void mainloop()
+{
+	char choice;
+
+	// loop creating new games after the previous one is finished
+	while(choice != 'Q')
+	{
+		Game2048 game;
+		game.game();
+		game.game_over();
+		choice = Game2048::get_choice();
+	}
+}
+
 int main()
 {
 	char choice;
@@ -801,22 +842,14 @@ int main()
 
 	switch(position)
 	{
-		case 3:
+		case 4:
 			exit(0);
 
+		case 3:
+			Game2048::print_credits();
+			break;
 		case 2:
-			Game2048::print_controls();
-
-		case 1:
-		{
-			// loop creating new games after the previous one is finished
-			while(choice != 'Q')
-			{
-				Game2048 game;
-				game.game();
-				game.game_over();
-				choice = Game2048::get_choice();
-			}
-		}
+			Game2048::print_controls();		
 	}
+	mainloop();
 }
