@@ -16,12 +16,12 @@ My version of game runs in an endless mode. Collect points as long as you can!
 
 You can **move up, down, left and right** (**WSAD**) — the whole table moves. It may sound silly but it iss very intuitive when you start playing. You can also **undo** move (but once! No cheating possible :) — do a move and you will be able to undo once again) with **E** and **quit** the game with **Q**
 
-### Premade binaries [TODO]
+### Premade binaries
 
 Cannot compile or simply do not want to? There you go! :)
 
-- Windows:
-- Linux:
+- Windows: TODO
+- [Linux](https://github.com/skelly37/cli-tui-games/releases/tag/0.5)
 - Mac: I have neither Mac nor friends with Mac, so it is your turn to contribute to the project ;)
 
 
@@ -55,8 +55,8 @@ Blackjack is my favorite card game (and a favorite way to gamble, I guess) so I 
 
 Cannot compile or simply do not want to? There you go! :)
 
-- Windows:
-- Linux:
+- Windows: TODO
+- [Linux](https://github.com/skelly37/cli-tui-games/releases/tag/0.5)
 - Mac: I have neither Mac nor friends with Mac, so it is your turn to contribute to the project ;)
 
 ## More games
