@@ -39,11 +39,11 @@ Cannot compile or simply do not want to? There you go! :)
 
 ![Game UI](https://github.com/skelly37/literally-everything/blob/main/screenshots/cli-tui-games/blackjack/normal-game-ui.png)
 
-![Card counting UI](https://github.com/skelly37/literally-everything/blob/main/screenshots/cli-tui-games/2048/card-counting-ui.png)
+![Card counting UI](https://github.com/skelly37/literally-everything/blob/main/screenshots/cli-tui-games/blackjack/card-counting-ui.png)
 
-![Game Over](https://github.com/skelly37/literally-everything/blob/main/screenshots/cli-tui-games/2048/game-over.png)
+![Game Over](https://github.com/skelly37/literally-everything/blob/main/screenshots/cli-tui-games/blackjack/game-over.png)
 
-![Stats](https://github.com/skelly37/literally-everything/blob/main/screenshots/cli-tui-games/2048/stats.png)
+![Stats](https://github.com/skelly37/literally-everything/blob/main/screenshots/cli-tui-games/blackjack/stats.png)
 
 ### Features
 
