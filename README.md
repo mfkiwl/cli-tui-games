@@ -4,6 +4,13 @@ Simply my games running in command line or terminal user interface
 
 ## [2048](https://github.com/skelly37/cli-tui-games/blob/main/2048.cpp)
 
+## Screenshots
+![Main menu](https://github.com/skelly37/literally-everything/blob/main/screenshots/cli-tui-games/2048/main-menu.png)
+
+![Game UI](https://github.com/skelly37/literally-everything/blob/main/screenshots/cli-tui-games/2048/game-ui.png)
+
+![Game over](https://github.com/skelly37/literally-everything/blob/main/screenshots/cli-tui-games/2048/game-lost.png)
+
 ### Features
 
 The game itself allows little features. 
@@ -26,6 +33,17 @@ Cannot compile or simply do not want to? There you go! :)
 
 
 ## [Blackjack](https://github.com/skelly37/cli-tui-games/blob/main/blackjack.cpp)
+
+## Screenshots
+![Main menu](https://github.com/skelly37/literally-everything/blob/main/screenshots/cli-tui-games/blackjack/main-menu.png)
+
+![Game UI](https://github.com/skelly37/literally-everything/blob/main/screenshots/cli-tui-games/blackjack/normal-game-ui.png)
+
+![Card counting UI](https://github.com/skelly37/literally-everything/blob/main/screenshots/cli-tui-games/2048/card-counting-ui.png)
+
+![Game Over](https://github.com/skelly37/literally-everything/blob/main/screenshots/cli-tui-games/2048/game-over.png)
+
+![Stats](https://github.com/skelly37/literally-everything/blob/main/screenshots/cli-tui-games/2048/stats.png)
 
 ### Features
 
