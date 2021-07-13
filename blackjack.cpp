@@ -192,7 +192,10 @@ class Blackjack
 				get_random_card('D');
 			}
 			else
+			{
+				dealer_card_counting_memory = 0;
 				generate_card_stack('T');
+			}
 				
 			get_random_card('D');
 		}
@@ -1134,9 +1137,15 @@ class Blackjack
 			cout << "\t\tStand:\t\tBack out and wait for results" << endl;
 			cout << "\t\tBust:\t\tExceed limit of 21 points and lose" << endl << endl << endl;
 			cout << endl << "\t\tNot implemented here because they are useless without real money:" << endl << endl;
-			cout << "\t\tDouble down:\tIf you have exactly two cards, you can double your bet\n\t\tand get exactly one card" << endl;
-			cout << "\t\tSplit:\t\tIf you have exactly two cards with exactly same value,\n\t\tyou can double your bet and play with two independent hands" << endl;
-			cout << "\t\tSurrender:\tSome casinos allow you to give up and lose only half of the bet\n\t\tbut only as the first decision" << endl;
+			cout << "\t\tDouble down:\tIf you have exactly two cards, you can double your bet\n\t\t\t\tand get exactly one card" << endl;
+			cout << "\t\tSplit:\t\tIf you have exactly two cards with exactly same value,\n\t\t\t\tyou can double your bet and play with two independent hands" << endl;
+			cout << "\t\tSurrender:\tSome casinos allow you to give up and lose only half of the bet\n\t\t\t\tbut only as the first decision" << endl;
+			cout << endl << endl << "\t\tHi Lo card counting:" << endl << endl;
+			cout << "\t\tCard counting helps you predict the possibility of getting HIgh or LOw card" << endl << endl;
+			cout << "\t\tHow to count cards? (and how does the dealer in my game) -- inclusive ranges" << endl;
+			cout << "\t\t2-6\t\t== +1 point" << endl;
+			cout << "\t\t7-9\t\t== +0 points" << endl;
+			cout << "\t\t10-K+A\t\t== -1 point" << endl;
 			cout << endl << endl << "\t\tClick E to return to main menu, Q to exit the game" << endl;
 		}
 
