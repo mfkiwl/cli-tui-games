@@ -332,9 +332,8 @@ class Blackjack
 						dealer_ace_value = 1;
 						dealer_hand_sum -= 10;
 					}
-
-					if(if_dealer_counts_cards())
-						modify_card_count(new_card_value);
+					
+					modify_card_count(new_card_value);
 
 					dealer_hand.push_back(random_card);
 					dealer_hand_sum += new_card_value;
